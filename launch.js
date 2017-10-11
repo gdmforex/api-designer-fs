@@ -17,7 +17,7 @@ module.exports = function(folder) {
   });
 
   launch_webapp_once(PORT, function() {
-    return spawn('open', [("http://localhost:" + PORT)]);
+    return spawn('npm', [("http://localhost:" + PORT)]);
   });
 }
 
